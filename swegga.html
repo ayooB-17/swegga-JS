@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayoob Pasqualli</title>
+    <link rel="stylesheet" href="swegga.css" />
+    <script type="text/javascript" src="swegga.js"></script>
+  </head>
+  <body>
+      <div class="head_img">
+          <img
+            src="swegga.jpg"
+            width="100%"
+            height="100"
+          />
+      </div>
+      <div class="navbar">
+        <a href=""><img border="0" alt="services" src="services.png" width="100" height="60"></a>
+        <a href=""><img border="0" alt="products" src="products.png" width="100" height="60"></a>
+        <a href=""><img border="0" alt="orderStatus" src="orderStatus.png" width="100" height="60"></a>
+        <a href=""><img border="0" alt="contactUs" src="contactUs.png" width="100" height="60"></a>
+        <a href="" class="right"><img border="0" alt="home" src="home.png" width="100" height="60"></a>
+      </div>
+      <div class="main">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <h2 style="color: whitesmoke; text-align: center;">Product Summary</h2>
+          <table>
+            <tr>
+              <th>Description</th>
+              <th>Size</th>
+              <th>Color</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+            </tr>
+            <tr>
+              <td><a href="#">Female Ski Jackets</a></td>
+              <td><select id="sizes">
+                    <option value="item-1">Small</option>
+                    <option value="item-2">Medium</option>
+                    <option value="item-3">Large</option>
+              </select></td>
+              <td><select id="colors">
+                    <option value="item-1">Red</option>
+                    <option value="item-2">Pink</option>
+                    <option value="item-3">Black</option>
+              </select></td>
+              <td class="num1"><input type="text" class="price" name="" pr_id="" value="150.95" onchange= "add_to_total(this)" style="width: 60px; height: 26px"/></td>
+              <td>Quantity:<input type="number" class="qty" name="" value="" onchange= "add_to_total(this)" style="width: 60px; height: 26px" size="5"/></td>
+              <td>Total Cost:<input type="text" name=""  class="total_price" style="width: 60px; height: 26px"></td>
+            </tr>
+            <tr>
+              <td><a href="#">Male Ski Jackets</a></td>
+              <td><select id="sizes">
+                    <option value="item-1">Small</option>
+                    <option value="item-2">Medium</option>
+                    <option value="item-3">Large</option>
+              </select></td>
+              <td><select id="colors">
+                    <option value="item-1">Red</option>
+                    <option value="item-2">Blue</option>
+                    <option value="item-3">White</option>
+              </select></td>
+              <td class="num1"><input type="text" class="price" name="" pr_id="" value="180.95" onchange= "add_to_total(this)" style="width: 60px; height: 26px"/></td>
+              <td>Quantity:<input type="number" class="qty" name="" value="" onchange= "add_to_total(this)" style="width: 60px; height: 26px" size="5"/></td>
+              <td>Total Cost:<input type="text" name=""  class="total_price" style="width: 60px; height: 26px"></td></tr>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td><strong id="p_total"></strong> </td>
+              <td>
+                <strong id="q_total"></strong> 
+              </td>
+            </tr>
+          </table>
+      </div>
+      <div class="dlvry_ad">
+        <img src="delivery.gif" alt="Example2" width="300" height="85" />
+      </div>
+      <div class="footer">
+        <p style="color: whitesmoke;">&copy; Swegga Fashion - Ayoob Pasqualli</p>
+      </div>
+    </div>
+  </body>
+</html>
