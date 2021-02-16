@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Ayoob Pasqualli</title>
+
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <script type="text/javascript" src="scripts/script.js"></script>
+
+</head>
+
+<body>
+    <div class="head_img">
+        <img src="images/swegga.jpg" width="100%" height="100" />
+    </div>
+
+    <div class="navbar">
+        <!--  When User Click's On One Of The Links The Page Will Simply Clear  -->
+        <a href=""><img border="0" alt="services" src="images/services.png" width="100" height="60"></a>
+        <a href=""><img border="0" alt="products" src="images/products.png" width="100" height="60"></a>
+        <a href=""><img border="0" alt="orderStatus" src="images/orderStatus.png" width="100" height="60"></a>
+        <a href=""><img border="0" alt="contactUs" src="images/contactUs.png" width="100" height="60"></a>
+        <a href="./index.html" class="right"><img border="0" alt="home" src="images/home.png" width="100" height="60"></a>
+    </div>
+
+    <div class="main">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <h2 style="color: whitesmoke; text-align: center;">Product Summary</h2>
+
+        <table>
+
+            <tr>
+                <th>Description</th>
+                <th>Size</th>
+                <th>Color</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+
+            <tr>
+
+                <td><a href="http://127.0.0.1:5500/SWEGGA/SWEGGAskiJacketsF.html">Female Ski Jackets</a></td>
+                <td><select id="sizes">
+                    <option value="item-1">Small</option>
+                    <option value="item-2">Medium</option>
+                    <option value="item-3">Large</option>
+              </select></td>
+                <td><select id="colors">
+                    <option value="item-1">Red</option>
+                    <option value="item-2">Pink</option>
+                    <option value="item-3">Black</option>            
+                  </select></td>
+                <td><input type="text" class="price" name="" pr_id="" value="1500.95" onchange="add_to_total(this)" style="width: 60px; height: 27px" /></td>
+                <td>Quantity: <input type="number" class="qty" name="" value="" onchange="add_to_total(this)" style="width: 60px; height: 27px" size="5" /></td>
+                <td>Total: <input id="a" type="text" class="total_price" name="a" style="width: 60px; height: 27px"></td>
+            </tr>
+
+            <tr>
+                <td><a href="http://127.0.0.1:5500/SWEGGA/SWEGGAskiJacketsM.html">Male Ski Jackets</a></td>
+                <td><select id="sizes">
+                    <option value="item-1">Small</option>
+                    <option value="item-2">Medium</option>
+                    <option value="item-3">Large</option>
+              </select></td>
+                <td><select id="colors">
+                    <option value="item-1">Red</option>
+                    <option value="item-2">Blue</option>
+                    <option value="item-3">White</option>
+              </select></td>
+                <td><input type="text" class="price" name="" value="1800.95" onchange="add_to_total(this)" style="width: 60px; height: 27px" /></td>
+                <td>Quantity: <input type="number" class="qty" value="" onchange="add_to_total(this)" style="width: 60px; height: 27px" size="5" /></td>
+                <td>Total: <input id="b" type="text" name="b" class="total_price" style="width: 60px; height: 27px"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><strong id="p_total"></strong> </td>
+                <td colspan="2"><strong id="q_total"><h5>Click To Confirm And Process Your Order</h5></strong></td>
+                <td colspan="2">
+                    <div class="flex">
+                        <div>
+                            <button onclick="add(document.getElementById('a').value,document.getElementById('b').value)" style="color: whitesmoke">                        
+                        Order
+                    </button>
+                        </div>
+                        &nbsp; &nbsp; &nbsp;
+                        <div>
+                            <div class="input-group">
+                                <span class="input-group-addon">Order Cost: </span>
+                                <input type="text" class="form-control" value="" style="width: 60px; height: 27px" />
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="dlvry_ad">
+
+        <img src="images/delivery.gif" alt="Example2" width="300" height="85" />
+
+    </div>
+
+    <div class="footer">
+
+        <p style="color: whitesmoke;">&copy; Swegga Fashion - Ayoob Pasqualli</p>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>
